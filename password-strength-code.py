@@ -5,7 +5,7 @@ def password_checker():
              'v', 'w', 'x', 'y', 'z']
     upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
              'V', 'W', 'X', 'Y', 'Z']
-    symbols = ['=', '+', '-', '_', '/', '@', '&', '(', ')', '#']
+    symbols = ['=', '+', '-', '_', '/', '@', '&', '(', ')', '#', "`", "~"]
     password_char = []
     up_flag = False
     low_flag = False
@@ -51,7 +51,7 @@ def password_checker():
                     score += 5
                 score += password_length
                 if score == 0:
-                    print("Your password is a mediocre.")
+                    print("Your password is a mediocre password.")
                 elif 11 <= score <= 44:
                     print("You have an okay password.")
                 elif 45 <= score <= 59:
